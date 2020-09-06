@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WaterBnB FEC Proxy Server</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nunito" />
+  <style>
+    .container {
+      margin: auto !important;
+      width: 90% !important;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row" style="border: 1px solid;"><h6>Title</h6></div>
+    <div id="images"></div>
+    <hr />
+    <div class="row">
+      <div class="col-md-7" style="border: 1px solid;"><h6>Title and Host Photo</h6></div>
+    </div>
+
+    <div class="row">
+      <div id="homeDesc" class="col-md-7"></div>
+      <div id="check-in" class="col-md-5" style="border: 1px solid; padding: 30px; margin-top: 100px"><h4>Check-In</h4></div>
+    </div>
+
+    <hr />
+    <div class="row" id="reviews">
+      <div style="border: 1px solid;"><h6>Reviews</h6></div>
+    </div>
+
+    <hr />
+    <div class="row" id="location">
+      <div style="border: 1px solid;"><h6>Map with Location</h6></div>
+    </div>
+
+    <div id="hostInfo">
+      <div style="border: 1px solid;"><h6>Host Information</h6></div>
+    </div>
+  </div>
+  <script type="text/javascript" src="http://localhost:3001/bundle.js"></script>
+  <script type="text/javascript" src="http://localhost:3002/bundle.js"></script>
+  <script type="text/javascript" src="http://localhost:3003/bundle.js"></script>
+  <script type="text/javascript" src="http://localhost:3006/bundle.js"></script>
+  <script src="react.development.js"></script>
+  <script src="react-dom.development.js"></script>
+</body>
+</html>

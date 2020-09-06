@@ -1,0 +1,25 @@
+{
+  "name": "amanda-proxy-server",
+  "version": "1.0.0",
+  "description": "proxy server for WaterBnB",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FEC-Gai/amanda-proxy-server.git"
+  },
+  "author": "Amanda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FEC-Gai/amanda-proxy-server/issues"
+  },
+  "homepage": "https://github.com/FEC-Gai/amanda-proxy-server#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-http-proxy": "^1.6.2"
+  }
+}
