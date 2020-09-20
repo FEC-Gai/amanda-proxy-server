@@ -20,13 +20,13 @@ app.use('/proxy', proxy('www.google.com', {
   }
 }));
 
-app.use('/images', proxy('http://ec2-3-21-170-25.us-east-2.compute.amazonaws.com', {
+app.use('/images', proxy('http://ec2-3-21-170-25.us-east-2.compute.amazonaws.com:3001', {
   proxyReqPathResolver: function (req) {
     let pieces = req.url.split('?');
     let pathname = pieces[0];
     let queryString = pieces[1];
     if (!queryString) {
-      return '';
+      return '/';
     } else {
       return `${pathname}?${queryString}`;
     }
@@ -77,3 +77,5 @@ app.use('/hostInfo', proxy('http://ec2-54-215-129-94.us-west-1.compute.amazonaws
 app.listen(PORT, () => {
   console.log(`proxy listening on port http://localhost:${PORT}`);
 });
+
+//images/querystring
